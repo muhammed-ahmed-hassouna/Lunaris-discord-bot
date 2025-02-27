@@ -1,0 +1,24 @@
+{
+  "name": "lunaris",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@discordjs/rest": "^2.4.3",
+    "@google/generative-ai": "^0.22.0",
+    "axios": "^1.7.9",
+    "discord-api-types": "^0.37.119",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9",
+    "openai": "^4.85.3",
+    "uuid": "^11.1.0"
+  }
+}
