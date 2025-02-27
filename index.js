@@ -1,4 +1,19 @@
 require("dotenv").config();
+
+// --- Keep-Alive Server ---
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Bot is alive!");
+});
+
+app.listen(PORT, () => {
+  console.log(`KeepAlive server running on port ${PORT}`);
+});
+
+// --- Discord Bot Code ---
 const { Client, GatewayIntentBits, Routes } = require("discord.js");
 const { REST } = require("@discordjs/rest");
 const fs = require("node:fs");
